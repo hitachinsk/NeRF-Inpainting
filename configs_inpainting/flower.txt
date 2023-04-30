@@ -1,0 +1,23 @@
+expname = flower_test_inpainting
+basedir = /gdata2/zhangkd/nerf/nerf-in
+datadir = /gdata1/zhangkd/NeRF/NeRF_data/nerf_llff_data/flower
+dataset_type = llff
+
+factor = 8
+llffhold = 8
+
+N_rand = 2048
+N_samples = 64
+N_importance = 64
+
+use_viewdirs = True
+raw_noise_std = 1e0
+
+finetune_dir = /gdata1/zhangkd/NeRF/NeRF_data/nerf_in_data/flower
+user_view = 0
+finetune_iters = 250000
+depth_weight = 1
+pre_ckpt = /gdata2/zhangkd/nerf/nerf-pytorch/logs_llff/flower_test/200000.tar
+
+i_testset = 10000
+i_video = 10000
